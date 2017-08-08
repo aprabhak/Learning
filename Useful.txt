@@ -1,0 +1,93 @@
+1)amortized time -> average time
+e.g arraylist -> cost of enlarging array spread out on insertions. So total time O(n) but amortized time O(1)
+O(worst case / # of operations)
+
+2)getting halved each time -> log(n)    or divided
+
+3)recursive runtime -> master method
+
+4)for (i = 0; i < N; i++)    -> still O(N^2) smaller constant factor does not affect.
+  for(j = i + 1; j < N; j++)  -> cut by half
+
+5)bst height is log(n)
+
+6)If there is branching, O(branches^depth). multiple recursive calls -> exponential runtime
+
+7)https://www.purdue.edu/webdb/JobPosting/JobSearch.php?jobType=2+Regular&jobCategory=Computer+Programmer%2FConsultant&jobNumber=
+
+http://mailchi.mp/d866fe92a7a9/wsw1j0vkl1#jobs
+
+8) binary search find things O(logN)
+   find things quickly in unsorted array -> hash table O(N)
+
+9)Best conceivable runtime(BCR)
+
+11) substring(a,b) -> excludes b
+substring(a) -> everything from index a
+
+12) mergesort - divide and conquer,divide repeatedly until lists with 1 item each.Compare with each other and combine while sorting. (nlogn)
+
+13) bubblesort - go through list and compare each element with one next to it and swap. Last element correct. Keep doing for all elements. (n^2)
+
+14) Linked List
+O(n) to get kth element.
+insert and delete O(1) but node finding is O(n)
+
+15) Tree
+Root -> topmost node
+child has children
+Leaf has no children.
+Binary tree has 0 to 2 children.
+Binary search tree -> left node less than root node. root node less than right node. O(n) for all operations. inorder usually.
+preorder -> root then left then right.
+inorder -> left then root then right.
+postorder -> left then right then root.
+
+16) Tries
+Type of tree for characters.
+Nodes represent characters which form words.
+Dictionary
+Fast lookups.
+Word validation
+Keep state within tree so you can build on past Nodes.
+
+17)Graph
+Collection of Nodes
+each node might point to other nodes.
+directed - one way street.
+undirected - two way street.
+pathing from one node to another - DFS,BFS
+Depth First Search -> Recursive, go deep inside nodes before going broad to neighbours then ask question. need flag to prevent infinite loop. Need backtrack.
+Breadth First Search -> Goes broad to neighbours before going deep. Use queue. Add children to queue. Then its children.
+BFS better for finding shortest path
+
+18)Stacks and Queues
+Linear Data Structure
+Flexible size
+Stack - Last in First Out (implement using linked list with top node)
+Queue - First in First out (implement using linked list with head and tail node)
+
+19)Heaps
+Min heap - top most value is the minimum.
+Use array to implement.
+Parent = (Index-1)/2
+Left = (Index*2) + 1
+Right = (Index*2) + 2
+balance heap when inserting or polling(removing topmost element)
+
+20)Hash Table (Array of linked lists)
+key value lookup(key -> value)
+hash fucnction (string->hashcode->index)
+array is usually smaller than number of hashcodes.
+2+ items could have different hash code but same index. (Collision)
+Fix by using chaining.(Linked List.store key and value)
+O(1) for good hashtable.
+
+21)Recursion is stack, stack is recursion. Finish last back track to first.
+
+22) Stack Space for (class methods, method variables,reference variables.) -> One block for each method.
+Heap Space for (Objects, instance variables.)
+Garbage Collection clear memory on heap used by objects which have no reference.
+Stack memory used only by one thread of execution.
+Heap memory used by all parts of application.
+
