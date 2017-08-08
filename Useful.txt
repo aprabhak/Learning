@@ -13,9 +13,6 @@ O(worst case / # of operations)
 
 6)If there is branching, O(branches^depth). multiple recursive calls -> exponential runtime
 
-7)https://www.purdue.edu/webdb/JobPosting/JobSearch.php?jobType=2+Regular&jobCategory=Computer+Programmer%2FConsultant&jobNumber=
-
-http://mailchi.mp/d866fe92a7a9/wsw1j0vkl1#jobs
 
 8) binary search find things O(logN)
    find things quickly in unsorted array -> hash table O(N)
